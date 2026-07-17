@@ -1,0 +1,14 @@
+﻿处理步骤,处理规则,处理前记录数,处理后记录数,影响记录数
+删除完全重复行,移除完全一致重复记录，无新增业务信息,5630,5630,0
+数值字段填充-Tenure,全局中位数填充缺失值，禁止按Churn分组填充,5630,5630,264
+数值字段填充-WarehouseToHome,全局中位数填充缺失值，禁止按Churn分组填充,5630,5630,251
+数值字段填充-HourSpendOnApp,全局中位数填充缺失值，禁止按Churn分组填充,5630,5630,255
+数值字段填充-OrderAmountHikeFromlastYear,全局中位数填充缺失值，禁止按Churn分组填充,5630,5630,265
+数值字段填充-CouponUsed,全局中位数填充缺失值，禁止按Churn分组填充,5630,5630,256
+数值字段填充-OrderCount,全局中位数填充缺失值，禁止按Churn分组填充,5630,5630,258
+数值字段填充-DaySinceLastOrder,全局中位数填充缺失值，禁止按Churn分组填充,5630,5630,307
+类别标准化 PreferredLoginDevice: Phone→Mobile Phone,同义业务标签统一合并,5630,5630,1231
+类别标准化 PreferredPaymentMode: COD→Cash on Delivery,同义业务标签统一合并,5630,5630,365
+类别标准化 PreferredPaymentMode: CC→Credit Card,同义业务标签统一合并,5630,5630,273
+类别标准化 PreferredOrderCat: Mobile→Mobile Phone,同义业务标签统一合并,5630,5630,0
+二分类标签类型转换,Churn、Complain转为int数值型，适配建模,5630,5630,5630

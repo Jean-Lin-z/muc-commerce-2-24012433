@@ -1,0 +1,5 @@
+﻿规则,不合规记录数
+使用时长HourSpendOnApp < 0,0
+仓库距离WarehouseToHome < 0,0
+订单数OrderCount <= 0,0
+返现金额CashbackAmount < 0,0
