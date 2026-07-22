@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}智能问答 | 电商用户分析系统{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="eyebrow">AI ASSISTANT</p>
+    <h1>数据智能问答</h1>
+    <p class="lead">输入问题，系统基于离线数据集自动回答。</p>
+  </div>
+</section>
+
+<div class="assistant-layout">
+  <aside class="question-list panel">
+    <h3>推荐问题</h3>
+    <button data-question="总共有多少用户">总共有多少用户</button>
+    <button data-question="总体流失率是多少">总体流失率是多少</button>
+    <button data-question="哪个品类用户最多">哪个品类用户最多</button>
+    <button data-question="哪个生命周期阶段流失最高">哪个生命周期阶段流失最高</button>
+    <button data-question="平均订单数是多少">平均订单数是多少</button>
+  </aside>
+
+  <section class="panel">
+    <div id="answer" class="empty-state">点击左侧推荐问题，或在下方输入你的问题</div>
+    <form id="question-form">
+      <input type="text" id="question" placeholder="请输入你的数据问题..." autocomplete="off">
+      <button type="submit" class="button">提问</button>
+    </form>
+  </section>
+</div>
+
+<script src="{{ url_for('static', filename='js/assistant.js') }}"></script>
+{% endblock %}

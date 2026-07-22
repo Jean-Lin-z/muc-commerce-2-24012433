@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}登录 | 电商用户分析系统{% endblock %}
+{% block content %}
+<section class="login-panel">
+  <div class="login-card">
+    <h1>系统登录</h1>
+    <p class="lead">请使用演示账号登录电商用户分析平台</p>
+    <form method="post" action="{{ url_for('login') }}">
+      <label for="username">用户名</label>
+      <input type="text" id="username" name="username" placeholder="student" required>
+      <label for="password">密码</label>
+      <input type="password" id="password" name="password" placeholder="day07" required>
+      <button type="submit" class="button" style="width:100%;margin-top:1.5rem;">登录</button>
+    </form>
+    <p style="margin-top:1rem;font-size:0.9rem;color:#666;">
+      演示账号：student / day07
+    </p>
+  </div>
+</section>
+{% endblock %}
